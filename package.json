@@ -7,9 +7,15 @@
     "cocoascript-class": "^0.1.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-airbnb": "^2.2.3",
+    "rimraf": "^2.6.1",
     "standard": "^8.6.0"
   },
   "scripts": {
+    "build": "babel ./src --out-dir ./lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run test && npm run clean && npm run build",
     "test": "standard"
   },
   "repository": {
