@@ -1,8 +1,6 @@
 /* globals NSJSONSerialization NSJSONWritingPrettyPrinted NSDictionary NSHTTPURLResponse NSString NSASCIIStringEncoding NSUTF8StringEncoding coscript NSURL NSMutableURLRequest NSMutableData NSURLConnection */
 
-var _ObjCClass = require('cocoascript-class')
-
-const ObjCClass = _ObjCClass.default
+const ObjCClass = require('cocoascript-class').default;
 
 function response (httpResponse, data) {
   const keys = []
